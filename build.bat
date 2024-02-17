@@ -1,0 +1,1 @@
+pyinstaller _main.py -n="myRSA" --icon="icon.ico" --add-data="specifications/*;specifications/" --distpath="./builds/dist"

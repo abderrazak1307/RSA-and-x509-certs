@@ -1,0 +1,14 @@
+# genKey
+myRSA genKey -b 2048 -p public.pem -s private.pem
+
+# genCert
+myRSA genCert -c examples/certificate.crt -s examples/private.pem
+
+# chkCert
+myRSA chkCert -c examples/certificate.crt
+
+# encFile
+myRSA encFile -p examples/public.pem -i examples/test.txt -o examples/test1.txt
+
+# decFile
+myRSA decFile -s examples/private.pem -i examples/test1.txt -o examples/test2.txt

@@ -1,0 +1,10 @@
+Foo DEFINITIONS ::= BEGIN
+    Question ::= SEQUENCE {
+        id        INTEGER,
+        question  OCTET STRING
+    }
+    Answer ::= SEQUENCE {
+        id        INTEGER,
+        answer    BOOLEAN
+    }
+END
